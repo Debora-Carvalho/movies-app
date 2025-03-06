@@ -9,6 +9,8 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        opacity: 1;
+        transition: opacity .6s;
     }
 
     .movie-infos {
@@ -19,20 +21,53 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
         padding: 10px;
 
         .movie-title {
             font-size: 12px;
             color: #f1f5f9;
+            margin-bottom: 6px;
         }
 
         .hidden-content {
             font-size: 12px;
             color: #f1f5f9;
             margin-top: 8px;
-            height: 0px 0px;
+            height: 0px;
             opacity: 0;
+            transition: all .6s;
+
+            .btn-default {
+                background-color: #6045ff;
+                padding: 6px 8px;
+                border-radius: 4px;
+                margin-top: 10px;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+            }
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .movie-poster img {
+            opacity: 0.5;
+        }
+
+        .hidden-content {
+            opacity: 1;
+        }
+
+        .movie-infos:has(.description) .hidden-content {
+            height: 100px;
+        }
+
+        .movie-infos:not(:has(.description) .hidden-content) {
+            height: 50px;
         }
     }
 }

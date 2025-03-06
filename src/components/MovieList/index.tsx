@@ -23,7 +23,7 @@ function MovieList() {
             }
         }).then(response => {
             setMovies(response.data.results);
-        })
+        });
     }
 
     return (
