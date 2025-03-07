@@ -17,10 +17,8 @@ Movies App é um catálogo interativo de filmes que permite aos usuários explor
 ## Screenshots
 
 ![Website/Home Screenshot](/public/screenshot-home-desktop.png)
-<br>
+<br><br>
 ![Website/Home Screenshot - description](/public/screenshot-home-desktop-description.png)
-<br>
-![Website/Home Screenshot - responsivo](/public/screenshot-home-mobile.png)
 
 ## Para executar localmente
 
